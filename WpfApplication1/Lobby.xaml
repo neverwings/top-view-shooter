@@ -1,0 +1,77 @@
+﻿<Window x:Class="WpfApplication1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lobby" Height="600" Width="538">
+    <!--Height="402.827" Width="538.516">-->
+    <Grid Name="LayoutRoot" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="75"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="5" />
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="5" />
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="5" />
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="5" />
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="5" />
+        </Grid.RowDefinitions>
+        <GroupBox Grid.Column="5" Grid.RowSpan="1" Header="Open Games" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.Row="1" >
+
+            <ListBox x:Name="gameList" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                <ListBox.Resources>
+
+                    <!--Defines a context menu-->
+                    <ContextMenu x:Key="MyElementMenu">
+                        <MenuItem Header="Join Game" Click="MenuItemJoinGame_Click"/>
+                        <!-- Click="MenuItemOpenGame_Click"/>-->
+                    </ContextMenu>
+
+                    <!--Sets a context menu for each ListBoxItem in the current ListBox-->
+                    <Style TargetType="{x:Type ListBoxItem}">
+                        <Setter Property="ContextMenu" Value="{StaticResource MyElementMenu}"/>
+                    </Style>
+
+                </ListBox.Resources>
+            </ListBox>
+        </GroupBox>
+        <GroupBox Grid.Column="5" Grid.RowSpan="3" Header="Playerlist" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.Row="2" >
+            <ListBox x:Name="playerList" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                <ListBox.Resources>
+
+                    <!--Defines a context menu-->
+                    <ContextMenu x:Key="MyElementMenu">
+                        <MenuItem Header="Private Message (PM)" Click="MenuItemPrivateMessage_Click"/>
+                        <MenuItem Header="Deprivatize current message" Click="MenuItemDePrivatizeMessage_Click"/>
+                        <!-- Click="MenuItemOpenGame_Click"/>-->
+                    </ContextMenu>
+
+                    <!--Sets a context menu for each ListBoxItem in the current ListBox-->
+                    <Style TargetType="{x:Type ListBoxItem}">
+                        <Setter Property="ContextMenu" Value="{StaticResource MyElementMenu}"/>
+                    </Style>
+
+                </ListBox.Resources>
+            </ListBox>
+        </GroupBox>
+        <Button Content="Create Game" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Top" Click="Button_Click_2" Height="20" />
+        <Button Content="Logout" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" Click="Button_Click_3" />
+        <Button Content="Quit" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="10" VerticalAlignment="Stretch" Click="Button_Click_4" />
+        <ListBox Grid.Column="1" x:Name="chatList" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Grid.ColumnSpan="3" Grid.RowSpan="4"/>
+        <GroupBox x:Name="chatBoxGroup" Grid.Column="1" Grid.RowSpan="6" Header="All:" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.Row="5" >
+            <TextBox x:Name="chatBox" HorizontalAlignment="Stretch" TextWrapping="Wrap" VerticalAlignment="Stretch"/>
+        </GroupBox>
+        <Button Content="Send" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="7" Grid.RowSpan="3" Click="Button_Click_1" />
+    </Grid>
+</Window>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Main class which is from XNA. As few own code as possible.">
+    <Position X="5.531" Y="0.5" Height="0.698" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Handles Update and Draw for the Game1 class with lower level classes.">
+    <Position X="5.385" Y="1.5" Height="0.635" Width="1.856" />
+  </Comment>
+  <Comment CommentText="Receives input and gives it when the general manager asks for it.">
+    <Position X="10.552" Y="0.5" Height="0.594" Width="1.835" />
+  </Comment>
+  <Comment CommentText="Contains every object within the world. ">
+    <Position X="8.989" Y="1.781" Height="0.521" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Abstract class which contains everything needed for world objects.">
+    <Position X="0.729" Y="1.271" Height="0.708" Width="1.7" />
+  </Comment>
+  <Comment CommentText="possibly: weapons, power-ups, healthpacks, ?ammo?">
+    <Position X="4.177" Y="5.792" Height="0.531" Width="1.7" />
+  </Comment>
+  <Class Name="WindowsGame1.Game1" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEEAAAAAAAwAAAAAAAAAAAAAAAAgAAAAAAAAAAAQ=</HashCode>
+      <FileName>Game1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGame1.Program" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGame1.WorldObject">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgIBgAAIAAAAAACAAAAAIAAAAAAAgAAA=</HashCode>
+      <FileName>World\Objects\WorldObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGame1.Player">
+    <Position X="0.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAADAAAAACAAAAAAEABAAAAAUAAACAACAAAAEAAA=</HashCode>
+      <FileName>World\Objects\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGame1.Wall">
+    <Position X="2.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>World\Objects\Wall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGame1.World">
+    <Position X="10.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAACAABAAAAAAAAAAAgAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>World\World.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGame1.GeneralManager">
+    <Position X="7.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAIIAAwAAAAAAAAAAAgAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Managers\GeneralManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGame1.InputManager">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\InputManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGame1.GameScreen">
+    <Position X="6.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>UI\GameScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGame1.HUDScreen">
+    <Position X="8.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\HUD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGame1.WorldGenerator">
+    <Position X="10.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>World\WorldGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGame1.Item">
+    <Position X="4.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACACAAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAQA=</HashCode>
+      <FileName>World\Objects\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGame1.Loader">
+    <Position X="9" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIABAAAAAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Other\Loader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGame1.ScreenTask">
+    <Position X="7.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAUAAAwAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>UI\ScreenTask.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
